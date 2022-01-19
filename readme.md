@@ -1,4 +1,4 @@
-B
+new branchB
 B
 B
 
