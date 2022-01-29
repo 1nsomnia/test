@@ -1,11 +1,12 @@
-from ast import Break
 import random
+upper = int(input("Give the upper number "))
+#upper = int(upper)
 
-number = random.randrange(0, 11)
+number = random.randrange(0, upper)
 guesses = 0
 
 while True:
-    answer = input("Guess the number 0-10 ")
+    answer = input("Guess the number 0-" + str(upper) +"? ")
     answer = int(answer)
     guesses = guesses +1
 #print(type(answer))
@@ -15,8 +16,8 @@ while True:
         break
     else:
         if answer < number:
-            print("te laag")
+            print("to low")
         else:
-            print("te hoog")
+            print("to high")
 
-print("je hebt het in:", guesses ," keer geraden")
+print("You have guessed it in :", guesses ,"turns")
