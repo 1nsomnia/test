@@ -20,4 +20,4 @@ while True:
         else:
             print("to high")
 
-print("You have guessed it in :", guesses ,"turns")
+print("You have guessed it in :", guesses ,"turns!")
